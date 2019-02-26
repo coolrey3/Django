@@ -3,19 +3,19 @@ from django.shortcuts import render
 posts = [
     {
         'author': 'Ray',
-        'title': 'first blog',
+        'title': 'rays post',
         'content': 'First blog content',
         'date_posted':'March 1,2019'
     },
     {
         'author': 'mel',
-        'title': 'second blog',
+        'title': 'mels post',
         'content': 'second blog content',
         'date_posted': 'March 2,2019'
     },
     {
         'author': 'Suzy',
-        'title': 'third blog',
+        'title': '',
         'content': 'third blog content',
         'date_posted': 'March 4,2019'
     }
@@ -29,7 +29,7 @@ def home(request):
     return render(request,'blog/home.html',context)
 
 def about(request):
-    return render(request,'blog/about.html')
+    return render(request,'blog/about.html', {'title':'About'})
 
 
 # Create your views here.
