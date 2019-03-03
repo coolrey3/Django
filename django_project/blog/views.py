@@ -15,10 +15,10 @@ posts = [
     },
     {
         'author': 'Suzy',
-        'title': '',
+        'title': 'Meet the Block',
         'content': 'third blog content',
         'date_posted': 'March 4,2019'
-    }
+    },
 
 ]
 
